@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Fugaz One', cursive;
+}
+
+nav {
+    position: fixed;
+    height: 80px;
+    overflow: hidden;
+    top: 0;
+    display: flex;
+    align-items: center;
+    background: #E8D9D1;
+    width: 100%;
+}
+
+.logo {
+    background: url(logo.png) no-repeat 50% 50%;
+    background-size: contain;
+    width: 240px;
+    height: 90px;
+    float: left;
+}
+
+.menu{
+    position: absolute;
+    right: 20px;
+}
+
+.menu a{
+    color: #333;
+    text-decoration: none;
+    font-weight: 700;
+    margin-left: 20px;
+    transition: color 0.3s;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+.menu a:hover{
+    color: #E85860;
+}
+h1 {
+    width: 100%;
+    height: 80px;
+    margin-top: 80px;
+    padding-top: 90px;
+    padding-left: 20px;
+    font-size: 35px;
+ }
+
+.btn {
+    display: none;
+    position: absolute;
+    right: 20px;
+}
+.btn:hover > span {
+    background-color: #E85860;
+}
+.btn span {
+    display: block;
+    margin: 6px;
+    width: 40px;
+    height: 3px;
+    background: #333;
+}
+
+
+p {
+    padding: 5px 20px 20px 20px;
+    font-size: 25px;
+    text-align: justify;
+}
+
+@media only screen and (max-width: 550px){
+    nav {
+        overflow: visible;
+    }
+    .menu {
+        width: 100%;
+        right: 0;
+        top: 80px;
+        background: #f1f1f1E6;
+        overflow: hidden;
+        max-height: 0;
+    }
+    .menu a{
+        display: block;
+        text-align: center;
+        padding: 10px;
+        margin: 0;
+        font-size: 15px;
+    }
+    .btn {
+        display: block;
+        cursor: pointer;
+    }
+    .show {
+        max-height: 200px;
+    }
+}
